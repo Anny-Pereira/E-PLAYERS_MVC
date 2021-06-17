@@ -1,29 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dev\\Desktop\\Projeto_EPLAYERS_MVC\\Projeto_EPLAYERS_MVC.csproj": {}
+    "C:\\Users\\elilt\\OneDrive\\Documentos\\SENAI\\E-PLAYERS_MVC\\Projeto_EPLAYERS_MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dev\\Desktop\\Projeto_EPLAYERS_MVC\\Projeto_EPLAYERS_MVC.csproj": {
+    "C:\\Users\\elilt\\OneDrive\\Documentos\\SENAI\\E-PLAYERS_MVC\\Projeto_EPLAYERS_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dev\\Desktop\\Projeto_EPLAYERS_MVC\\Projeto_EPLAYERS_MVC.csproj",
+        "projectUniqueName": "C:\\Users\\elilt\\OneDrive\\Documentos\\SENAI\\E-PLAYERS_MVC\\Projeto_EPLAYERS_MVC.csproj",
         "projectName": "Projeto_EPLAYERS_MVC",
-        "projectPath": "C:\\Users\\dev\\Desktop\\Projeto_EPLAYERS_MVC\\Projeto_EPLAYERS_MVC.csproj",
-        "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dev\\Desktop\\Projeto_EPLAYERS_MVC\\obj\\",
+        "projectPath": "C:\\Users\\elilt\\OneDrive\\Documentos\\SENAI\\E-PLAYERS_MVC\\Projeto_EPLAYERS_MVC.csproj",
+        "packagesPath": "C:\\Users\\elilt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elilt\\OneDrive\\Documentos\\SENAI\\E-PLAYERS_MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\elilt\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -34,7 +35,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "imports": [
             "net461",
             "net462",
@@ -53,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

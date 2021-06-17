@@ -15,7 +15,7 @@ namespace Projeto_EPLAYERS_MVC.Models
 
         public string Senha { get; set; }
 
-        public string IdEquipe { get; set; }
+        public int IdEquipe { get; set; }
 
         private const string CAMINHO = "DataBase/Jogador.csv";
 
@@ -26,7 +26,7 @@ namespace Projeto_EPLAYERS_MVC.Models
 
         private string Preparar(Jogador J)
         {
-            return $"{J.IdEquipe};{J.Nome}";
+            return $"{J.IdJogador};{J.Nome};{J.Email};{J.Senha};{J.IdEquipe}";
         }
 
         public void Alterar(Jogador J)
@@ -64,6 +64,9 @@ namespace Projeto_EPLAYERS_MVC.Models
 
                 jogador.IdJogador = Int32.Parse(CadaLinha[0]);
                 jogador.Nome = CadaLinha[1];
+                jogador.Email = CadaLinha[2];
+                jogador.Senha = CadaLinha[3];
+                jogador.IdEquipe = Int32.Parse(CadaLinha[4]);
 
                 ListaJogadores.Add(jogador);
             }
