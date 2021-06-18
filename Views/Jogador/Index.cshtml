@@ -2,6 +2,8 @@
 @{
     ViewData["Title"] = "Jogadores";
 }
+<script src="https://kit.fontawesome.com/429ce419a2.js" crossorigin="anonymous"></script>
+
 
 <form method="POST" action='@Url.Action("Cadastrar")'>
     <label>ID</label>
@@ -38,6 +40,7 @@
                 <td>@Jogador.Nome</td>
                 <td>@Jogador.Email</td>
                 <td>@Jogador.IdEquipe</td>
+                <td><a asp-area="" asp-controller="Jogador" asp-action="Excluir" asp-route-id="@Jogador.IdJogador"><i class="fas fa-trash"></i></a></td>
             </tr>
         }
     </tbody>

@@ -36,5 +36,14 @@ namespace E_PLAYERS_MVC.Controllers
             //LocalRedirect - recarrega a página
             return LocalRedirect("~/Jogador/Listar");
         }
+
+        [Route("{id}")]
+        public IActionResult Excluir(int id)
+        {
+            JogadorModel.Deletar(id);
+            ViewBag.Jogadores =  JogadorModel.LerJogadores();
+
+            return LocalRedirect("~/Jogador/Listar");
+        }
     }
 }
