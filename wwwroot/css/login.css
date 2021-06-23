@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+.banner_cadastro {
+    background-image: url("../Imagens/imgLogin.jpg");
+}
+
+.cadastro {
+    height: 500px;
+    background-color: #1E1C21;
+}
+
+.caixa_cadastro {
+    height: 330px;
+}

@@ -8,14 +8,17 @@
 
 <section class="cadastro">
     <div class="grid espaçamento_section">
-        <form method="POST" action='@Url.Action("Logar")'>
+        <form class="caixa_cadastro" method="POST" action='@Url.Action("Logar")'>
 
-            <label class="letter_texto">Email</label>
-            <input type="text" name="Email">
+            <div class="item_cadastro">
+                <label class="letter_texto">Email</label>
+                <input type="text" name="Email">
+            </div>
 
-            <label class="letter_texto">Senha</label>
-            <input type="password" name="Senha">
-
+            <div class="item_cadastro">
+                <label class="letter_texto">Senha</label>
+                <input type="password" name="Senha">
+            </div>
             <div class="erro">@TempData.Peek("MensagemErro")</div>
 
             <button type="submit">Entrar</button>
