@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.botao_menu {
+    display: none;
+}
+
+.banner_cadastro {
+    height: 237px;
+    width: auto;
+    background-image: url("../Imagens/pilotos.red.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: Titillium Web;
+    font-weight: 700;
+    font-size: 40px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro {
+    height: 1110px;
+    background-color: #1E1C21;
+}
+
+.espaçamento_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.caixa_cadastro {
+    width: 770px;
+    height: 629px;
+    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    box-shadow: 1px 1px 20px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+.letter_texto {
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.item_cadastro {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 575px;
+    height: 30px;
+    background-color: #ABABAB;
+
+}
+
+.item_cadastro_equipe {
+    margin: 60px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    width: 575px;
+    height: 30px;
+    background-color: #ABABAB;
+}
+
+.espaço_equipe {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+button {
+    width: 257px;
+    height: 40px;
+    background-color: #C31616;
+    border-radius: 10px;
+    border-color: #C31616;
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.lista_jogadores {
+    margin-bottom: 40px;
+}
+
+.titulo_listajogadores {
+    color: #ffffff;
+    font-family: Titillium Web;
+    font-weight: 700;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+table {
+    width: 770px;
+    border: 2px solid #FFFFFF;
+    border-spacing: 0;
+}
+
+th {
+    padding: 0px 20px;
+    text-align: left;
+    border-collapse: collapse;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+td {
+    padding: 0px 20px;
+}
+
+.linha1 {
+    height: 60px;
+    background: #010101;
+}
+
+.linha2 {
+    height: 60px;
+    background: none;
+}
+
+.linha3 {
+    height: 60px;
+    background: none;
+}
+
+.conteudo_footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.texto_footer {
+    display: flex;
+    align-items: center;
+}
+
+.logo_footer {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 420px) {
+
+    .grid {
+        width: 80vw;
+    }
+
+    .header img {
+        width: 200px;
+    }
+
+    .itens_header {
+        display: none;
+        background-color: rgb(44, 44, 44);
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        align-items: unset;
+        left: 0;
+        top: 120px;
+        align-items: unset;
+        justify-content: space-evenly;
+        padding: 8vw;
+    }
+
+    .botao_menu {
+        color: #ffffff;
+        display: inline-block;
+        font-size: x-large;
+    }
+
+    .banner_cadastro {
+        background-position: center;
+    }
+
+    .espaçamento_section {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .caixa_cadastro {
+        width: 80vw;
+        height: auto;
+    }
+
+    .item_cadastro {
+        margin: 10px 0px;
+    }
+
+    input {
+        width: 280px;
+    }
+
+    select {
+        width: 280px;
+    }
+
+    .lista_jogadores {
+        margin-bottom: 120px;
+    }
+
+    table {
+        width: 80vw;
+        height: 100%;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .conteudo_footer {
+        width: 80vw;
+        height: auto;
+        padding: 30px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto_footer {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        align-items: center;
+        height: 330px;
+        justify-content: space-around;
+    }
+
+    .item_footer {
+        width: 200px;
+    }
+
+    .logo_footer {
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newsletter {
+        width: 80vw;
+        padding: 0px 22px;
+    }
+
+    .img_cadastro {
+        width: 80vw;
+    }    
+
+    .item_footer {
+        width: auto;
+    }
+}

@@ -2,8 +2,10 @@
 @{
     ViewData["Title"] = "Jogadores";
 }
-<script src="https://kit.fontawesome.com/429ce419a2.js" crossorigin="anonymous"></script>
 
+<section class="banner_cadastro" id="banner">
+    <h1>Cadastro de @ViewData["Title"]</h1>
+</section>
 
 <form method="POST" action='@Url.Action("Cadastrar")'>
     <label>ID</label>

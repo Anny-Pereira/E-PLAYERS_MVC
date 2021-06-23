@@ -2,9 +2,196 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Hello!</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <a class="navbar-brand" asp-area="" asp-controller="Equipe" asp-action="Index">Equipes</a>
-    <a class="navbar-brand" asp-area="" asp-controller="Jogador" asp-action="Index">Jogadores</a> 
-</div>
+
+<section class="banner" id="banner">
+    <div class="grid alinhamento_banner">
+        <div class="texto_banner">
+            <h1>Liga E-Players</h1>
+            <span class="span_banner">O maior portal de campeonatos online</span>
+            <a asp-area="" asp-controller="Equipe" asp_action="Index"><button  class="button_banner">Inscrever Equipe</button></a>
+            <a asp-area="" asp-controller="Jogador" asp_action="Index"><button  class="button_banner">Inscrever Jogador</button></a>
+        </div>
+    </div>
+</section>
+<section class="parcerias">
+    <div class="grid">
+        <img src="~/Imagens/formula-1-logo.png" alt="F1">
+        <img src="~/Imagens/logo-lol.png" alt="LoL">
+        <img src="~/Imagens/Counter-Strike-Logo.png" alt="Counter Strike">
+        <img src="~/Imagens/valorant-logo.png" alt="Valorant">
+        <img src="~/Imagens/FIFA_logo.png" alt="FIFA">
+    </div>
+</section>
+<section class="ligas">
+    <div class="conteudo_ligas">
+        <div class="grid">
+            <div class="texto_ligas">
+                <h2>Como participar das ligas?</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged it was popularised in the.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. </p>
+            </div>
+            <img src="~/Imagens/league-of-legends-champions.png" alt="img.ligas">
+        </div>
+    </div>
+</section>
+<section class="ao_vivo" id="campeonatos">
+    <div class="grid">
+        <div class="conteiner_partida">
+            <span class="titulo_aovivoembreve">Ao vivo</span>
+            <div class="partida">
+                <span>SK</span>
+                <img src="~/Imagens/sk-logo.png" alt="logo.time">
+                <span class="vs">vs</span>
+                <img src="~/Imagens/fla-logo.png" alt="logo.flamengo">
+                <span>SK</span>
+            </div>
+        </div>
+        <hr>
+        <div class="conteiner_partida">
+            <span class="titulo_aovivoembreve">Em breve</span>
+            <div class="partida">
+                <span>SK</span>
+                <img src="~/Imagens/sk-logo.png" alt="logo.time">
+                <span class="vs">vs</span>
+                <img src="~/Imagens/fla-logo.png" alt="logo.flamengo">
+                <span>SK</span>
+            </div>
+            <div class="partida">
+                <span>SK</span>
+                <img src="~/Imagens/sk-logo.png" alt="logo.time">
+                <span class="vs">vs</span>
+                <img src="~/Imagens/fla-logo.png" alt="logo.flamengo">
+                <span>SK</span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="noticias" id="noticias">
+    <div class="grid">
+        <div class="todas_noticias">
+            <span>Notícias</span>
+            <div class="noticias_isa">
+                <article class="noticia">
+                    <img src="~/Imagens/player (1).jpg" alt="img.noticia">
+                    <div class="texto_noticia">
+                        <span>Título da notícia</span>
+                        <p>Lorem lpsum is simply dummy text of the printing and typesetting industry. Lorem lpsum has
+                            been the industry’s standard dummy text.</p>
+                    </div>
+                </article>
+                <article class="noticia">
+                    <img src="~/Imagens/player (1).jpg" alt="img.noticia">
+                    <div class="texto_noticia">
+                        <span>Título da notícia</span>
+                        <p>Lorem lpsum is simply dummy text of the printing and typesetting industry. Lorem lpsum has
+                            been the industry’s standard dummy text.</p>
+                    </div>
+                </article>
+                <article class="noticia">
+                    <img src="~/Imagens/player (1).jpg" alt="img.noticia">
+                    <div class="texto_noticia">
+                        <span>Título da notícia</span>
+                        <p>Lorem lpsum is simply dummy text of the printing and typesetting industry. Lorem lpsum has
+                            been the industry’s standard dummy text.</p>
+                    </div>
+                </article>
+                <div class="ultima_fileira_noticias">
+                    <article class="noticia">
+                        <img src="~/Imagens/player (1).jpg" alt="img.noticia">
+                        <div class="texto_noticia">
+                            <span>Título da notícia</span>
+                            <p>Lorem lpsum is simply dummy text of the printing and typesetting industry. Lorem lpsum
+                                has been the industry’s standard dummy text.</p>
+                        </div>
+                    </article>
+                    <article class="noticia">
+                        <img src="~/Imagens/player (1).jpg" alt="img.noticia">
+                        <div class="texto_noticia">
+                            <span>Título da notícia</span>
+                            <p>Lorem lpsum is simply dummy text of the printing and typesetting industry. Lorem lpsum
+                                has been the industry’s standard dummy text.</p>
+                        </div>
+                    </article>
+                    <article class="noticia">
+                        <img src="~/Imagens/player (1).jpg" alt="img.noticia">
+                        <div class="texto_noticia">
+                            <span>Título da notícia</span>
+                            <p>Lorem lpsum is simply dummy text of the printing and typesetting industry. Lorem lpsum
+                                has been the industry’s standard dummy text.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="prox_partidas">
+            <span>Próximos Jogos</span>
+            <div class="proximos_jogos">
+                <div class="quadro_1partida">
+                    <div class="prox_partida">
+                        <span>SK</span>
+                        <img src="~/Imagens/sk-logo.png" alt="logo.time">
+                        <span class="vs">vs</span>
+                        <img src="~/Imagens/fla-logo.png" alt="logo.flamengo">
+                        <span>VRS</span>
+                    </div>
+                    <span>01/12/2020 19:00</span>
+                </div>
+                <div class="quadro_1partida">
+                    <div class="prox_partida">
+                        <span>SK</span>
+                        <img src="~/Imagens/sk-logo.png" alt="logo.time">
+                        <span class="vs">vs</span>
+                        <img src="~/Imagens/fla-logo.png" alt="logo.flamengo">
+                        <span>VRS</span>
+                    </div>
+                    <span>01/12/2020 19:00</span>
+                </div>
+                <div class="quadro_1partida">
+                    <div class="prox_partida">
+                        <span>SK</span>
+                        <img src="~/Imagens/sk-logo.png" alt="logo.time">
+                        <span class="vs">vs</span>
+                        <img src="~/Imagens/fla-logo.png" alt="logo.flamengo">
+                        <span>VRS</span>
+                    </div>
+                    <span>01/12/2020 19:00</span>
+                </div>
+                <div class="quadro_1partida">
+                    <div class="prox_partida">
+                        <span>SK</span>
+                        <img src="~/Imagens/sk-logo.png" alt="logo.time">
+                        <span class="vs">vs</span>
+                        <img src="~/Imagens/fla-logo.png" alt="logo.flamengo">
+                        <span>VRS</span>
+                    </div>
+                    <span>01/12/2020 19:00</span>
+                </div>
+                <div class="quadro_1partida">
+                    <div class="prox_partida">
+                        <span>SK</span>
+                        <img src="~/Imagens/sk-logo.png" alt="logo.time">
+                        <span class="vs">vs</span>
+                        <img src="~/Imagens/fla-logo.png" alt="logo.flamengo">
+                        <span>VRS</span>
+                    </div>
+                    <span>01/12/2020 19:00</span>
+                </div>
+                <div class="quadro_1partida">
+                    <div class="prox_partida">
+                        <span>SK</span>
+                        <img src="~/Imagens/sk-logo.png" alt="logo.time">
+                        <span class="vs">vs</span>
+                        <img src="~/Imagens/fla-logo.png" alt="logo.flamengo">
+                        <span>VRS</span>
+                    </div>
+                    <span>01/12/2020 19:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

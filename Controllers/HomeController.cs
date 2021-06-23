@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Projeto_EPLAYERS_MVC.Models;
@@ -20,6 +21,7 @@ namespace Projeto_EPLAYERS_MVC.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.NomeUsuario = HttpContext.Session.GetString("_NomeUsuario");
             return View();
         }
 

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-PLAYERS CADASTRO DE JOGADOR</title>
+    <script src="https://kit.fontawesome.com/c8490647d8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/e-players.css">
+    <link rel="stylesheet" href="css/e-players-cadastro-jogador.css">
+</head>
+<body>
+    <header>
+        <div class="grid header">
+            <a href="#banner"><img src="Imagens/logo 3.png" alt="logo e-players"></a>
+            <nav class="itens_header" id="itens_header">
+                <a href="#banner" onclick="BotaoMenu()">Início</a>
+                <a href="#noticias" onclick="BotaoMenu()">Horários</a>
+                <a href="#campeonatos" onclick="BotaoMenu()">Campeonatos</a>
+                <a href="#noticias" onclick="BotaoMenu()">Resultados</a>
+                <a href="#noticias" onclick="BotaoMenu()">Notícias</a>
+            </nav>
+            <a class="botao_menu" href="javascript:void(0)" onclick="BotaoMenu()">  
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="banner_cadastro" id="banner">
+            <h1>Cadastro de Jogador</h1>
+        </section>
+        <section class="cadastro">
+            <div class="grid espaçamento_section">
+                <div class="caixa_cadastro">
+                    <div class="item_cadastro">
+                        <span class="letter_texto">Nome do jogador:</span>
+                        <input type="text">
+                    </div>
+                    <div class="item_cadastro">
+                        <span class="letter_texto">E-mail:</span>
+                        <input type="text">
+                    </div>
+                    <div class="item_cadastro">
+                        <span class="letter_texto">Senha:</span>
+                        <input type="password">
+                    </div>
+                    <div class="item_cadastro_equipe">
+                        <span class="letter_texto">Equipe:</span>
+                        <select name="equipe" id="equipe"></select>
+                    </div>
+                    <button>Cadastrar</button>
+                </div>
+                <div class="lista_jogadores">
+                    <span class="titulo_listajogadores">Lista de Jogadores</span>
+                    <table class="letter_texto">
+                        <tr class="linha1">
+                            <th>Nome do Jogador</th>
+                            <th>Equipe</th>
+                        </tr>
+                        <tr class="linha2">
+                            <td>Thiago</td>
+                            <td>SENAI Cytechs</td>
+                        </tr>
+                        <tr class="linha3">
+                            <td>Odirlei</td>
+                            <td>SENAI Cytechs</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="grid">
+            <div class="conteudo_footer">
+                <div class="texto_footer">
+                    <div class="item_footer">
+                        <span class="titulo_span">Links Úteis</span>
+                        <ul>
+                            <li>Regras de Utilização</li>
+                            <li>Suporte</li>
+                            <li>Central de Ajuda</li>
+                            <li>Contato</li>
+                        </ul>
+                    </div>
+                    <div class="item_footer">
+                        <span class="titulo_span">Páginas</span>
+                        <ul>
+                            <a href="#banner"><li>Início</li></a>
+                            <a href="#campeonatos"><li>Campeonatos</li></a>
+                            <a href="#noticias"><li>Resultados</li></a>
+                            <a href="#noticias"><li>Notícias</li></a>
+                            <a href=""><li>Login/Cadastro</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <a class="logo_footer" href="#banner"><img src="Imagens/logo 3.png" alt="logo e-players"></a>
+                <div class="redes_sociais">
+                    <span class="item_footer newsletter">Faça parte do nosso clan, assine nossa newsletter!</span>
+                    <img class="img_cadastro" src="Imagens/cadastro.png" alt="img.cadastro">
+                    <div class="icones">
+                        <span class="item_footer">Siga-nos em:</span>
+                        <img src="Imagens/instagram.png" alt="img.instagram">
+                        <img src="Imagens/facebook.png" alt="img.facebook">
+                        <img src="Imagens/youtube.png" alt="img.youtube">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function BotaoMenu() {
+            var menu = document.getElementById("itens_header")
+            if (menu.style.display === "flex") {
+                menu.style.display = "none";
+             //quando o menu estiver em display:flex, o esconda
+            }
+            else {
+                menu.style.display = "flex";
+             //se o menu não estiviver em display:flex, o mostre
+            }
+        }
+    </script>
+</body>
+</html>
