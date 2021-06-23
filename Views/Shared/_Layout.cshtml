@@ -6,9 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Projeto_EPLAYERS_MVC</title>
-    @* <link rel="stylesheet" href="~/css/e-players-cadastro-times" /> *@
     <link rel="stylesheet" href="~/css/e-players.css" />
-    <link rel="stylesheet" href="~/css/e-players-cadastro-jogador" />
+
+    @if (ViewData["Title"].ToString() == "Equipes")
+    {
+        <link rel="stylesheet" href="~/css/e-players-cadastro-times.css" />
+        <link rel="stylesheet" href="~/css/e-players-cadastro-jogador.css" />
+    }
+
+    @if (ViewData["Title"].ToString() == "Jogadores")
+    {
+        <link rel="stylesheet" href="~/css/e-players-cadastro-jogador.css" />
+    }
+
+    @if (ViewData["Title"].ToString() == "Login")
+    {
+        <link rel="stylesheet" href="~/css/e-players-cadastro-jogador.css" />
+    }
+
     <script src="https://kit.fontawesome.com/429ce419a2.js" crossorigin="anonymous"></script>
 
 
@@ -17,7 +32,8 @@
 <body>
     <header>
         <div class="grid header">
-            <a asp-area="" asp-controller="Home" asp_action="Index"><img src="~/Imagens/logo 3.png" alt="logo e-players"></a>
+            <a asp-area="" asp-controller="Home" asp_action="Index"><img src="~/Imagens/logo 3.png"
+                    alt="logo e-players"></a>
             <nav class="itens_header">
                 <a asp-area="" asp-controller="Home" asp_action="Index">Início</a>
                 <a href="#noticias">Horários</a>
@@ -27,7 +43,7 @@
 
                 @if (ViewBag.NomeUsuario != null)
                 {
-                    <li style="color: #CA0000">Olá @ViewBag.NomeUsuario!</li>
+                    <span style="color: #CA0000">Olá @ViewBag.NomeUsuario!</span>
                     <a asp-area="" asp-controller="Login" asp_action="Logout">Logout</a>
                 }
                 else
@@ -78,7 +94,8 @@
                     </ul>
                 </div>
             </div>
-            <a asp-area="" asp-controller="Home" asp_action="Index"><img src="~/Imagens/logo 3.png" alt="logo e-players"></a>
+            <a asp-area="" asp-controller="Home" asp_action="Index"><img src="~/Imagens/logo 3.png"
+                    alt="logo e-players"></a>
             <div class="redes_sociais">
                 <span class="item_footer newsletter">Faça parte do nosso clan, assine nossa newsletter!</span>
                 <img src="~/Imagens/cadastro.png" alt="img.cadastro">

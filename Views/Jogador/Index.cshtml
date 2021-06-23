@@ -7,44 +7,63 @@
     <h1>Cadastro de @ViewData["Title"]</h1>
 </section>
 
-<form method="POST" action='@Url.Action("Cadastrar")'>
-    <label>ID</label>
-    <input type="text" name="IdJogador">
+<section class="cadastro">
+    <div class="grid espaçamento_section">
 
-    <label>Nome</label>
-    <input type="text" name="Nome">
+        <form class="caixa_cadastro" method="POST" action='@Url.Action("Cadastrar")'>
 
-    <label>Email</label>
-    <input type="text" name="Email">
+            <div class="item_cadastro">
+                <label class="letter_texto">ID</label>
+                <input type="text" name="IdJogador">
+            </div>
 
-    <label>Senha</label>
-    <input type="password" name="Senha">
+            <div class="item_cadastro">
+                <label class="letter_texto">Nome</label>
+                <input type="text" name="Nome">
+            </div>
 
-    <label>ID Equipe </label>
-    <input type="text" name="IdEquipe">
+            <div class="item_cadastro">
+                <label class="letter_texto">Email</label>
+                <input type="text" name="Email">
+            </div>
 
-    <button type="submit">Cadastrar</button>
+            <div class="item_cadastro">
+                <label class="letter_texto">Senha</label>
+                <input type="password" name="Senha">
+            </div>
 
-</form>
+            <div class="item_cadastro_equipe">
+                <label class="letter_texto">ID Equipe </label>
+                <input type="text" name="IdEquipe">
+            </div>
 
-<table class="table table-striped table-responsive">
-    <thead>
-        <th>ID</th>
-        <th>Nome</th>
-        <th>Email</th>
-        <th>ID Equipe</th>
-    </thead>
-    <tbody>
-        @foreach (var Jogador in ViewBag.Jogadores)
-        {
-            <tr>
-                <td>@Jogador.IdJogador</td>
-                <td>@Jogador.Nome</td>
-                <td>@Jogador.Email</td>
-                <td>@Jogador.IdEquipe</td>
-                <td><a asp-area="" asp-controller="Jogador" asp-action="Excluir" asp-route-id="@Jogador.IdJogador"><i class="fas fa-trash"></i></a></td>
-            </tr>
-        }
-    </tbody>
+            <button type="submit">Cadastrar</button>
 
-</table>
+        </form>
+        <div class="lista_jogadores">
+            <table class="letter_texto">
+                <thead class="linha1">
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>ID Equipe</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    @foreach (var Jogador in ViewBag.Jogadores)
+                    {
+                        <tr class="linha2">
+                            <td>@Jogador.IdJogador</td>
+                            <td>@Jogador.Nome</td>
+                            <td>@Jogador.Email</td>
+                            <td>@Jogador.IdEquipe</td>
+                            <td><a asp-area="" asp-controller="Jogador" asp-action="Excluir"
+                                asp-route-id="@Jogador.IdJogador"><i class="fas fa-trash"></i></a></td>
+                        </tr>
+                    }
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</section>

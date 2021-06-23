@@ -36,7 +36,7 @@ header {
 }
 
 .itens_header {
-    width: 736px;
+    width: 70%;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -46,7 +46,7 @@ header {
 .itens_header a {
     color: white;
     font-family: 'Roboto';
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;

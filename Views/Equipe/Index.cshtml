@@ -4,17 +4,79 @@
 }
 
 
-<!DOCTYPE html>
-<html lang="pt-br">
-    <link rel="stylesheet" href="css/e-players-cadastro-times.css">
+<link rel="stylesheet" href="css/e-players-cadastro-times.css">
 
-<section class="banner_cadastro" id="banner">
+<section class="banner_cadastro_times" id="banner">
     <h1>Cadastro de @ViewData["Title"]</h1>
 </section>
 
-<form class="cadastro" method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
 
-            <div class="item_cadastro">
+ <section class="cadastro">
+            <div class="grid espaçamento_section">
+                <div class="caixa_cadastro">
+                    <form class="caixa_cadastro espaçamento_section" method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+                            
+                            <div class="item_cadastro">
+                                <span class="letter_texto">Id da Equipe:</span>
+                                <input type="text" name="IdEquipe">
+                            </div>
+                            <div class="item_cadastro">
+                                <span class="letter_texto">Nome da Equipe:</span>
+                                <input type="text" name="Nome">
+                            </div>
+                            <div class="item_cadastro">
+                                <span class="letter_texto">Emblema:</span>
+                                @* <label class="label" for="Imagem">Escolha a Imagem</label> *@
+                                <input class="input_emblema" type="file" name="Imagem">
+
+                            </div>
+                        <button class="btn_cadastro_times">Cadastrar</button>
+                </form>
+                </div>
+                <div class="lista_jogadores">
+                    <span class="titulo_listajogadores">Lista de Times</span>
+                    <table class="letter_texto">
+                        <thead>
+                            <tr class="linha1">
+                                <th>Id</th>
+                                <th>Nome da Equipe</th>
+                                <th>Emblema</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var Equipe in ViewBag.Equipes)
+                            {
+                            <tr>
+                                <td>@Equipe.IdEquipe</td>
+                                <td>@Equipe.Nome</td>
+                                <td><img src="/img/Equipes/@Equipe.Imagem" alt="" width="50px"></td>
+                                <td><a asp-area="" asp-controller="Equipe" asp-action="Excluir"
+                                        asp-route-id="@Equipe.IdEquipe"><i class="fas fa-trash"></i></a></td>
+                                @* <td>@Equipe.Imagem</td> *@
+                            </tr>
+                            }
+                        </tbody>
+
+
+
+                        <!-- <tr class="linha2">
+                            <td>SENAI Cytechs</td>
+                            <td><img src="Imagens/fla-logo.png" alt="logo_flamengo"></td>
+                        </tr>
+                        <tr class="linha3">
+                            <td>SENAI Cytechs</td>
+                            <td><img src="Imagens/fla-logo.png" alt="logo_flamengo"></td>
+                        </tr> -->
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
+@* <form class="cadastro" method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data"> *@
+
+            @* <div class="item_cadastro">
                 <label >ID</label>
                 <input type="text" name="IdEquipe">
             </div>
@@ -27,7 +89,25 @@
             <div class="item_cadastro_emblema">
                 <label >Imagem</label>
                 <input type="file" name="Imagem">
-            </div>
+            </div> *@
+
+                @* <div class="grid espaçamento_section">
+                <div class="caixa_cadastro">
+                    <div class="itens_cadastro">
+
+                        <div class="item_cadastro">
+                            <span class="letter_texto">Nome da Equipe:</span>
+                            <input type="text" name="Nome">
+                        </div>
+                        <div class="item_cadastro_emblema">
+                            <span class="letter_texto">Emblema:</span>
+                            <label class="label" for="Imagem">Escolha a Imagem</label>
+                            <input class="input_emblema" type="file" name="Imagem">
+                
+                        </div>
+                    </div>
+                    <button class="btn_cadastro_times">Cadastrar</button>
+                </div>
 
         <button type="submit" class="btn_cadastro_times">Cadastrar</button>
     </div>
@@ -48,8 +128,8 @@
                 <td><img src="/img/Equipes/@Equipe.Imagem" alt="" width="50px"></td>
                 <td><a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@Equipe.IdEquipe"><i
                         class="fas fa-trash"></i></a></td>
-                @* <td>@Equipe.Imagem</td> *@
+                <td>@Equipe.Imagem</td>
             </tr>
         }
     </tbody>
-</table>
+</table> *@

@@ -3,19 +3,23 @@
 }
 
 <section class="banner_cadastro" id="banner">
-    <h1>Cadastro de @ViewData["Title"]</h1>
+    <h1>@ViewData["Title"]</h1>
 </section>
 
-<form method="POST" action='@Url.Action("Logar")'>
+<section class="cadastro">
+    <div class="grid espaçamento_section">
+        <form method="POST" action='@Url.Action("Logar")'>
 
-    <label>Email</label>
-    <input type="text" name="Email">
+            <label class="letter_texto">Email</label>
+            <input type="text" name="Email">
 
-    <label>Senha</label>
-    <input type="password" name="Senha">
-    
-    <div class="erro">@TempData.Peek("MensagemErro")</div>
+            <label class="letter_texto">Senha</label>
+            <input type="password" name="Senha">
 
-    <button type="submit">Entrar</button>
+            <div class="erro">@TempData.Peek("MensagemErro")</div>
 
-</form>
+            <button type="submit">Entrar</button>
+
+        </form>
+    </div>
+</section>
